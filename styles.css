@@ -1,4 +1,57 @@
+/* Estilos generales para el foco */
 :focus {
-  outline: 2px solid blue;
-  outline-offset: 2px;
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+/* -- ESTILOS PARA MÓVIL (MOBILE-FIRST) -- */
+
+/* Estilos de productos: Tarjeta de 1 por fila */
+#productos {
+    display: flex;
+    flex-direction: column; /* Coloca los artículos uno debajo del otro */
+    gap: 20px; /* Espacio entre las tarjetas de producto */
+}
+
+/* Estilos para cada tarjeta de producto */
+#productos article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#productos article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos del header y footer para móvil */
+header {
+    background-color: red; /* Header rojo, como se pide en la imagen */
+}
+
+footer {
+    color: blue; /* Texto del footer azul, como se pide */
+}
+
+/* Oculta el banner en dispositivos móviles */
+.banner {
+    display: none;
+}
+
+/* -- MEDIA QUERY PARA ESCRITORIO (> 600px) -- */
+@media screen and (min-width: 601px) {
+    
+    header {
+        background-color: initial;
+    }
+
+    footer {
+        color: initial;
+    }
+
+    .banner {
+        display: block;
+    }
 }
