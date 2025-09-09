@@ -1,1 +1,8 @@
 Nombre: Dennis Chacón Ortiz Carrera: Ingenieria de Sistemas Universidad: Universidad Adventista de Bolivia Paralelo: "A" Semestre: Segundo Descripción: Soy un estudiante egresado del Instituto Téncico CIPEC donde obtuve el grado de Técnico Superior de Sistemas Informáticos. También obtuve el titulo de Técnico en reparación y mantenimiento de computadoras, en el mismo instituto. Actualmente estudio en la Universidad Adventista de Bolivia para obtener el grado de Licenciatura. El proyecto en el que trabajé para egresar, fue una aplicación móvil de gestión de ventas para la tienda de instrumentos musicales "Mundo Musical" de la ciudad de Cochabamba. Esto con el propósito de dar una solucion a una problemática que se presentaba en dicha tienda, la cual era que los temas administrativos se realizaban de forma manual.
+
+## Accesibilidad (a11y)
+
+* **Skip Link:** Se añadió un enlace para saltar al contenido principal al inicio de la página, facilitando la navegación con teclado al permitir a los usuarios omitir el menú de navegación repetitivo.
+* **Navegación por Teclado:** Se validó la navegación completa de la página usando la tecla `Tab` para asegurar que todos los elementos interactivos (enlaces y botones) son alcanzables y su orden es lógico.
+* **Alt Descriptivos:** Se agregaron descripciones detalladas en el atributo `alt` de todas las imágenes. Esto beneficia a los usuarios con lectores de pantalla, dándoles contexto sobre el contenido visual.
+* **Uso de ARIA:** Se priorizó el uso de etiquetas semánticas de HTML5 (`<header>`, `<nav>`, `<main>`, `<footer>`, etc.) en lugar de atributos `aria`. Esto sigue la regla de que, si un elemento nativo es suficiente, no se debe usar ARIA.
