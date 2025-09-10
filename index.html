@@ -1,69 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANACO | Artículos de cuero hechos a mano</title>
-    <meta name="description" content="Descubre MANACO: bolsos y accesorios de cuero hechos a mano. Diseño y artesanía se unen en piezas únicas para tu estilo de vida." />
-    <meta property="og:title" content="MANACO | Artículos de Cuero" />
-    <meta property="og:description" content="Colección única de bolsos y accesorios de cuero." />
-    <meta property="og:image" content="https://ejemplo.com/url-de-la-imagen-manaco.jpg" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- SEO on-page -->
+  <title>MANACO — Calzado que impulsa tu paso</title>
+  <meta name="description" content="MANACO ofrece calzado cómodo y funcional que impulsa tu paso. Descubre productos pensados para el día a día: diseño, confort y calidad en cada paso.">
+  <!-- Open Graph mínimos -->
+  <meta property="og:title" content="MANACO — Calzado que impulsa tu paso" />
+  <meta property="og:description" content="MANACO ofrece calzado cómodo y funcional que impulsa tu paso. Descubre productos pensados para el día a día." />
+  <meta property="og:image" content="https://example.com/og-placeholder.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <!-- Skip link para saltar al contenido (a11y) -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-    <header>
-        <h1>MANACO</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">MANACO</div>
 
-    <main id="main-content">
-        <section id="inicio">
-            <h2>Bienvenido a MANACO</h2>
-            <p>Descubre nuestros productos de alta calidad y encuentra lo que necesitas.</p>
-        </section>
+      <!-- Checkbox oculto para menú hamburguesa -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-        <section id="productos">
-            <h2>Nuestros Productos</h2>
-            <div role="list">
-                <article>
-                    <h3>Producto 1: Eleganza Sofa</h3>
-                    <p>Un sofá cómodo y elegante para tu sala de estar.</p>
-                    <p><strong>Precio: $XXX.XX</strong></p>
-                    <a href="#">Ver más</a>
-                </article>
+      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                <article>
-                    <h3>Producto 2: LumiLámpara</h3>
-                    <p>Lámpara de diseño moderno para iluminar tus espacios.</p>
-                    <p><strong>Precio: $YYY.YY</strong></p>
-                    <a href="#">Ver más</a>
-                </article>
+  <main id="main" class="container" role="main" tabindex="-1">
+    <!-- Hero (banner) -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-box">
+        <h1 id="hero-title">Calzado que impulsa tu paso</h1>
+      </div>
+    </section>
 
-                <article>
-                    <h3>Producto 3: TerraMesa</h3>
-                    <p>Mesa auxiliar versátil, ideal para cualquier rincón.</p>
-                    <p><strong>Precio: $ZZZ.ZZ</strong></p>
-                    <a href="#">Ver más</a>
-                </article>
-            </div>
-        </section>
+    <!-- Sección Productos -->
+    <section class="products-section" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos</h2>
+      <ul class="products-list">
+        <li>
+          <article class="product-card" aria-labelledby="p1-title">
+            <img src="data:image/svg+xml;charset=UTF-8,
+              %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E
+                %3Crect width='100%25' height='100%25' fill='%23eeeeee' stroke='%239a9a9a' stroke-width='4'/%3E
+                %3Cline x1='10' y1='10' x2='190' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+                %3Cline x1='190' y1='10' x2='10' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+              %3C/svg%3E" alt="Imagen del Producto 1 (placeholder)" width="200" height="200" />
+            <h3 id="p1-title" class="product-title">Producto 1</h3>
+            <p class="price">$00.00</p>
+            <a class="btn" href="#" role="button">Comprar</a>
+          </article>
+        </li>
+        <li>
+          <article class="product-card" aria-labelledby="p2-title">
+            <img src="data:image/svg+xml;charset=UTF-8,
+              %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E
+                %3Crect width='100%25' height='100%25' fill='%23eeeeee' stroke='%239a9a9a' stroke-width='4'/%3E
+                %3Cline x1='10' y1='10' x2='190' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+                %3Cline x1='190' y1='10' x2='10' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+              %3C/svg%3E" alt="Imagen del Producto 2 (placeholder)" width="200" height="200" />
+            <h3 id="p2-title" class="product-title">Producto 2</h3>
+            <p class="price">$00.00</p>
+            <a class="btn" href="#" role="button">Comprar</a>
+          </article>
+        </li>
+        <li>
+          <article class="product-card" aria-labelledby="p3-title">
+            <img src="data:image/svg+xml;charset=UTF-8,
+              %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E
+                %3Crect width='100%25' height='100%25' fill='%23eeeeee' stroke='%239a9a9a' stroke-width='4'/%3E
+                %3Cline x1='10' y1='10' x2='190' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+                %3Cline x1='190' y1='10' x2='10' y2='190' stroke='%239a9a9a' stroke-width='6'/%3E
+              %3C/svg%3E" alt="Imagen del Producto 3 (placeholder)" width="200" height="200" />
+            <h3 id="p3-title" class="product-title">Producto 3</h3>
+            <p class="price">$00.00</p>
+            <a class="btn" href="#" role="button">Comprar</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes preguntas? No dudes en contactarnos.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 MANACO. Todos los derechos reservados.</p>
-    </footer>
-
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="copyright">Copyright 2025 MANACO</p>
+    </div>
+  </footer>
 </body>
 </html>
+
